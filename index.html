@@ -11,7 +11,14 @@
       <a-entity obj-model="mtl:main_top/main_top.mtl;obj:main_top/main_top.obj" id="main_top"></a-entity>
       <a-entity obj-model="mtl:main_bottom/main_bottom.mtl;obj:main_bottom/main_bottom.obj" id="main_bottom"></a-entity>
       <a-entity obj-model="mtl:main_bottom/rocks.mtl;obj:main_bottom/rocks.obj" id="rocks"></a-entity> 
-      <a-entity obj-model="mtl:scaffoldobj/materials.mtl;obj:scaffoldobj/model.obj" id="scaff" position="4.574 6.157 0.697" scale="13.329 13.329 13.329"></a-entity>
+      <a-entity obj-model="mtl:scaffoldobj/materials.mtl;obj:scaffoldobj/scaf.obj" id="scaff"></a-entity>
+      <a-entity position="4.572 0.293 0.086" scale="2.882 0.237 1.965" geometry="" id="lift">
+          <a-animation attribute="position" to="4.572 0.293 0.086" from="4.572 8.185 0.086" dur="5000" begin="elevator_up"></a-animation>         
+          <a-animation attribute="position" from="4.572 0.293 0.086" to="4.572 8.185 0.086" dur="5000" begin="elevator_down"></a-animation>
+    
+        </a-entity>
+        <a-entity position="3.102 0 -2.515" geometry="" id="el_up"></a-entity>
+        <a-entity position="3.102 0 2.026" geometry="" id="el_down"></a-entity>
       <a-sky src="#thesky" radius="2500"></a-sky>
       <!-- Match Gear VR controller if present, regardless of hand. -->
 <a-entity gearvr-controls></a-entity>
