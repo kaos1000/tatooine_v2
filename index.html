@@ -18,8 +18,8 @@
           <a-animation attribute="position" from="4.572 0.293 0.086" to="4.572 8.185 0.086" dur="5000" begin="elevator_up"></a-animation>
     
         </a-entity>
-        <a-entity position="3.102 0 -2.515" geometry="" id="el_up" material="color:#15965a;src:#btn;"></a-entity>
-        <a-entity position="3.102 0 2.026" geometry="" id="el_down" material="color:green;src:#btn;"></a-entity>
+        <a-entity position="3.102 0 -2.515" geometry="" id="el_up" material="color:#15965a;src:#btn;" sync='own-on: click'></a-entity>
+        <a-entity position="3.102 0 2.026" geometry="" id="el_down" material="color:green;src:#btn;" sync='own-on: click'></a-entity>
       <a-sky src="#thesky" radius="2500"></a-sky>
       <!-- Match Gear VR controller if present, regardless of hand. -->
 <a-entity gearvr-controls></a-entity>
