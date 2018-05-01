@@ -4,8 +4,11 @@
     <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
   </head>
   <body>
+ 
     <a-scene sync-system='app: Tatooine; author: Altspace' altspace="fullspace:true;">
-     <!-- <a-scene>-->
+    <!--
+   <a-scene>
+   -->
       <a-assets>
         <img id="thesky" src="sky_redsunset1200.jpg">
         <img id="btn" src="main_bottom/btn1.png">
@@ -15,19 +18,19 @@
       <a-entity obj-model="mtl:main_bottom/rocks.mtl;obj:main_bottom/rocks.obj" id="rocks"></a-entity> 
       <a-entity obj-model="mtl:scaffoldobj/materials.mtl;obj:scaffoldobj/scaf.obj" id="scaff"></a-entity>
       <a-entity position="4.845 0.025 0.041" scale="3.056 0.06 1.679" geometry="" id="lift" sync="" sync-transform="">
-          <a-animation attribute="position" to="4.845 8.185 0.041" from="4.845 0.025 0.041" dur="5000" begin="elevator_down"></a-animation>         
+          <a-animation attribute="position" to="4.845 0.025 0.041" from="4.845 8.185 0.041" dur="5000" begin="elevator_down"></a-animation>         
           <a-animation attribute="position" from="4.845 0.025 0.041" to="4.845 8.185 0.041" dur="5000" begin="elevator_up"></a-animation>
     
         </a-entity>
         <a-entity id="panel" position="3.433 0.93 0.742" rotation="0 -90 0" scale="0.126 0.126 0.126">
             <a-entity position="3.102 0 0.738" geometry="" id="el_up" material="color:#15965a;src:#btn">
     
-                <a-entity id="size" position="-0.04 0.067 0.647" text="align:center;color:white;value:UP;width:1.5" scale="4.379 4.379 4.379"></a-entity>
             </a-entity>
             <a-entity position="1.865 0 0.713" geometry="" id="el_down" material="color:green;src:#btn">
-                <a-entity id="size" position="-0.02 -0.017 0.514" text="align:center;color:white;value:DOWN;width:1.5" scale="4.457 4.457 4.457"></a-entity>
+               
             </a-entity>
-    </a-entity><a-sky src="#thesky" radius="2500"></a-sky>
+    </a-entity>
+    <a-sky src="#thesky" radius="2500"></a-sky>
       <!-- Match Gear VR controller if present, regardless of hand. -->
 <a-entity gearvr-controls></a-entity>
 <a-entity position="1 1 1" camera="active:true;userHeight:1.6" wasd-controls="easing:20.01;fly:true;acceleration:165" rotation="-38.80136368210983 -1208.0242228532563 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera"></a-entity>
