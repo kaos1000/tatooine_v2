@@ -61,7 +61,11 @@
            
         </a-entity>
 </a-entity>
-    <a-sky src="#thesky" radius="2500"></a-sky>
+<a-entity id="binary" scale="71.422 71.422 71.422" position="0 -635.501 -676.741">
+  <a-entity position="-0.532 10.357 -24.237" geometry="primitive:sphere" material="color:yellow;emissive:#f4bf42;opacity:.5"></a-entity>
+  <a-entity position="1.742 9.53 -24.237" geometry="primitive:sphere" material="color:lightyellow;emissive:orange"></a-entity>
+  </a-entity>
+<a-sky src="#thesky" radius="2500" rotation="0 -83.0215845144563 0"></a-sky>
 
 <a-entity position="1 1 1" camera="active:true;userHeight:1.6" wasd-controls="easing:20.01;fly:true;acceleration:165" rotation="-38.80136368210983 -1208.0242228532563 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera" gearvr-controls>
     <a-cursor></a-cursor>
