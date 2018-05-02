@@ -34,12 +34,12 @@
 
       <a-entity obj-model="mtl:main_bottom/main_bottom.mtl;obj:main_bottom/main_bottom.obj" id="main_bottom" n-mesh-collider="type: environment;"></a-entity>
       <a-entity obj-model="mtl:main_bottom/rocks.mtl;obj:main_bottom/rocks.obj" id="rocks" n-mesh-collider="type: environment;convex:false;"></a-entity> 
-      <a-entity  id="scaff">
-          <a-entity n-box-collider="type: environment;" position="3.542 3.692 1.072" scale="0.506 15.6 0.401" geometry="" material="src:#catwalk;repeat: .35 13;transparent:true;"></a-entity>
-          <a-entity n-box-collider="type: environment;" position="6.27 3.692 1.072" scale="0.506 15.6 0.401" geometry="" material="src:#catwalk;repeat: .35 13;transparent:true;"></a-entity>
-          <a-entity n-box-collider="type: environment;" position="3.586 3.692 -1.017" scale="0.506 15.6 0.401" geometry="" material="src:#catwalk;repeat: .35 13;transparent:true;"></a-entity>
-          <a-entity n-box-collider="type: environment;" position="6.27 3.692 -0.964" scale="0.506 15.6 0.401" geometry="" material="src:#catwalk;repeat: .35 13;transparent:true;"></a-entity>
-      </a-entity>
+      <a-entity id="scaff" position"0="" 3.918="" 0"="" position="0 4.233 0">
+        <a-entity n-box-collider="type:environment" position="3.542 3.692 1.072" scale="0.506 15.6 0.401" geometry="" material="repeat:0.35 13;transparent:true;src:#catwalk"></a-entity>
+        <a-entity n-box-collider="type:environment" position="6.27 3.692 1.072" scale="0.506 15.6 0.401" geometry="" material="repeat:0.35 13;transparent:true;src:#catwalk"></a-entity>
+        <a-entity n-box-collider="type:environment" position="3.586 3.692 -1.017" scale="0.506 15.6 0.401" geometry="" material="repeat:0.35 13;transparent:true;src:#catwalk"></a-entity>
+        <a-entity n-box-collider="type:environment" position="6.27 3.692 -0.964" scale="0.506 15.6 0.401" geometry="" material="repeat:0.35 13;transparent:true;src:#catwalk"></a-entity>
+    </a-entity>
       <a-entity n-box-collider="type: environment;" position="4.845 0.025 0.041" scale="3.056 0.06 1.679" geometry="" id="lift" sync="" sync-transform="" material="src:#catwalk;repeat: 1 1;transparent:true;">
           <a-animation attribute="position" to="4.845 0.025 0.041" from="4.845 8.185 0.041" dur="10000" begin="elevator_down"></a-animation>         
           <a-animation attribute="position" from="4.845 0.025 0.041" to="4.845 8.185 0.041" dur="10000" begin="elevator_up"></a-animation>
@@ -63,7 +63,7 @@
 </a-entity>
 <a-entity id="binary" scale="71.422 71.422 71.422" position="0 -635.501 -676.741">
   <a-entity position="-0.532 10.357 -24.237" geometry="primitive:sphere" material="color:yellow;emissive:#f4bf42;opacity:.2"></a-entity>
-  <a-entity position="1.742 9.53 -24.237" geometry="primitive:sphere" material="color:lightyellow;emissive:#f46542;opacity:.7"></a-entity>
+  <a-entity position="1.742 9.53 -24.237" geometry="primitive:sphere" material="color:lightyellow;emissive:#f46542;"></a-entity>
   </a-entity>
 <a-sky src="#thesky" radius="2500" rotation="0 -83.0215845144563 0"></a-sky>
 
