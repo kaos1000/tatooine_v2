@@ -12,5 +12,5 @@ newmtl 14___Default
 	Kd 0.9843137860 0.9843137860 0.9843137860
 	Ks 0.0000000000 0.0000000000 0.0000000000
 	Ke 0.0000000000 0.0000000000 0.0000000000
-	map_Ka main_bottom.png
-	map_Kd main_bottom.png
+	map_Ka main_bottom.jpg
+	map_Kd main_bottom.jpg
