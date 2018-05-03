@@ -12,5 +12,5 @@ newmtl 02___Default
 	Kd 1.0000000000 1.0000000000 1.0000000000
 	Ks 0.0000000000 0.0000000000 0.0000000000
 	Ke 0.0000000000 0.0000000000 0.0000000000
-	map_Ka textures/main_top.png
-	map_Kd textures/main_top.png
+	map_Ka textures/main_top.jpg
+	map_Kd textures/main_top.jpg

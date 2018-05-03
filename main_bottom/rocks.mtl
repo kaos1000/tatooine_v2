@@ -12,5 +12,5 @@ newmtl 19___Default
 	Kd 0.9960784912 0.9960784912 0.9960784912
 	Ks 0.0000000000 0.0000000000 0.0000000000
 	Ke 0.0000000000 0.0000000000 0.0000000000
-	map_Ka rocks.png
-	map_Kd rocks.png
+	map_Ka rocks.jpg
+	map_Kd rocks.jpg
