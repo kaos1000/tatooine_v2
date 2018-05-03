@@ -8,9 +8,9 @@
  <script>
    /**/
  		if (window.navigator.userAgent.indexOf('Altspace') == -1) {
-			document.write('<a-scene>');
+			document.write('<a-scene fog="type: exponential;density:0.00025;color: #874f01;">');
 		}else{
-      document.write('<a-scene sync-system="app: Tatooine; author: Altspace" altspace="fullspace:true;">');
+      document.write('<a-scene sync-system="app: Tatooine; author: Altspace" altspace="fullspace:true;" fog="type: exponential;density:0.00025; color: #874f01;">');
     }
  console.log(window.navigator.userAgent);
  </script>
