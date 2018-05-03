@@ -11,14 +11,49 @@
 			document.write('<a-scene fog="type: exponential;density:0.00025;color: #874f01;">');
 		}else{
       document.write('<a-scene sync-system="app: Tatooine; author: Altspace" altspace="fullspace:true;" fog="type: exponential;density:0.00025; color: #874f01;">');
+      
+       altspace.getUser().then(function (fulfilled) {
+            // yay, you got a new phone
+            console.log(fulfilled);
+         // output: { brand: 'Samsung', color: 'black' }
+        })
+        .catch(function (error) {
+            // oops, mom don't buy it
+            console.log(error.message);
+         // output: 'mom is not happy'
+        });   
     }
- console.log(window.navigator.userAgent);
+
  </script>
     <!--   
    <a-scene sync-system='app: Tatooine; author: Altspace' altspace="fullspace:true;">
 
    <a-scene>
-  --> 
+  -->
+  <a-entity id="arrow_panel" position="3.602 0.933 0.825" rotation="-90.012 0 0" scale="0.08 0.017 0.08">
+    <a-entity id="up_arrow" position="-2.512 0 0" rotation="-180 0 0">
+    <a-entity position="-0.196 0 -0.282" rotation="0 -53.686 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="0.201 0 -0.282" rotation="0 53.68614540375814 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="-0.012 0 0" scale="0.189 1 1" geometry="" material="color:white"></a-entity>
+  </a-entity>
+  <a-entity id="down_arrow" position="0.922 0.234 0">
+    <a-entity position="-0.196 0 -0.282" rotation="0 -53.686 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="0.201 0 -0.282" rotation="0 53.68614540375814 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="-0.012 0 0" scale="0.189 1 1" geometry="" material="color:white"></a-entity>
+  </a-entity>
+  </a-entity>
+  <a-entity id="arrow_panel2" position="6.366 9.112 -0.706" rotation="-90.012 0 0" scale="0.08 0.017 0.08">
+    <a-entity id="up_arrow" position="0.376 -0.119 0" rotation="-180 0 0">
+    <a-entity position="-0.196 0 -0.282" rotation="0 -53.686 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="0.201 0 -0.282" rotation="0 53.68614540375814 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="-0.012 0 0" scale="0.189 1 1" geometry="" material="color:white"></a-entity>
+  </a-entity>
+  <a-entity id="down_arrow" position="-2.372 0.234 0">
+    <a-entity position="-0.196 0 -0.282" rotation="0 -53.686 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="0.201 0 -0.282" rotation="0 53.68614540375814 0" scale="0.189 1 0.45" geometry="" material="color:white"></a-entity>
+    <a-entity position="-0.012 0 0" scale="0.189 1 1" geometry="" material="color:white"></a-entity>
+  </a-entity>
+  </a-entity>
       <a-assets>
         <img id="thesky" src="sky_redsunset1200.jpg">
         <img id="btn" src="main_bottom/btn1.png">
@@ -49,8 +84,9 @@
         <a-entity geometry="" id="lift2" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="4.824 15.358 0.101" scale="5.581 0.187 6.874"></a-entity>
         <a-entity id="stairs">
           <a-entity geometry="" id="lift2-2" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="12.089 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
-          <a-entity geometry="" id="lift2-4" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="10.328 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
-          <a-entity geometry="" id="lift2-5" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="7.942 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
+          <a-entity geometry="" id="lift2-4" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="10.615 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
+          <a-entity geometry="" id="lift2-5" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="7.711 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
+          <a-entity geometry="" id="lift2-6" material="transparent:true;src:#catwalk" n-box-collider="type:environment" position="9.158 7.825 13.543" scale="1.451 0.806 1.451"></a-entity>
           <a-entity geometry="" id="lift2-3" material="transparent:true;color:blue;src:#catwalk" n-box-collider="type:environment" position="10.411 6.799 12.975" scale="1.451 0.806 1.451"></a-entity>
   </a-entity>
         </a-entity>
